@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+body{margin:0;}
+
+#gridSet{
+    width:100vw;
+    height:100vh;
+
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+#head{
+    background-color:lightblue;  
+
+    grid-column-start:1;
+    grid-column-end:6;
+    grid-row-start:1;
+}
+
+#nav{
+    background-color:indianred;
+
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:2;
+    grid-row-end:5;
+}
+
+#main{
+    background-color:palegreen;
+
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:5;
+}
+
+#aside{
+    background-color:blanchedalmond;
+
+    grid-column-start:5;
+    grid-row-start:2;
+    grid-row-end:5;
+}
+
+#foot{
+    background-color:lightcoral;
+
+    grid-column-start:1;
+    grid-column-end:6;
+    grid-row-start:5;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="gridSet">
+        <div id="head" class="setItems"></div>
+        <div id="nav" class="setItems"></div>
+        <div id="main" class="setItems"></div>
+        <div id="aside" class="setItems"></div>
+        <div id="foot" class="setItems"></div>
+    </div>
+</body>
+</html>
